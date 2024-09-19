@@ -1,0 +1,70 @@
+{
+  "chainer": {
+    "in": ["entity_substr", "tags", "probas", "sentences", "entity_offsets", "sentences_offsets"],
+    "pipe": [
+      {
+        "class_name": "torch_transformers_entity_ranker_infer",
+        "id": "entity_descr_ranking",
+        "pretrained_bert": "{TRANSFORMER}",
+        "encoder_weights_path": "{MODELS_PATH}/entity_linking_rus/encoder.pth.tar",
+        "bilinear_weights_path": "{MODELS_PATH}/entity_linking_rus/bilinear.pth.tar",
+        "special_token_id": 30522,
+        "emb_size": 264,
+        "block_size": 6
+      },
+      {
+        "class_name": "entity_linker",
+        "in": ["entity_substr", "tags", "probas", "sentences", "entity_offsets", "sentences_offsets"],
+        "out": ["entity_ids", "entity_conf", "entity_pages", "entity_labels"],
+        "load_path": "{DOWNLOADS_PATH}/entity_linking_rus",
+        "entities_database_filename": "el_rus_v2.db",
+        "words_dict_filename": "{DOWNLOADS_PATH}/entity_linking_rus/words_dict.pickle",
+        "ngrams_matrix_filename": "{DOWNLOADS_PATH}/entity_linking_rus/ngrams_matrix.npz",
+        "entity_ranker": "#entity_descr_ranking",
+        "rank_in_runtime": true,
+        "num_entities_for_bert_ranking": 30,
+        "use_gpu": false,
+        "include_mention": false,
+        "num_entities_to_return": 3,
+        "lemmatize": true,
+        "use_descriptions": true,
+        "use_connections": true,
+        "use_tags": true,
+        "kb_filename": "{DOWNLOADS_PATH}/wikidata/wikidata_lite.hdt",
+        "prefixes": {"entity": ["http://we"],
+                     "rels": {"direct": "http://wpd",
+                              "no_type": "http://wp",
+                              "statement": "http://wps",
+                              "qualifier": "http://wpq"
+                              }
+                     },
+        "full_paragraph": true,
+        "return_confidences": true,
+        "lang": "ru"
+      }
+    ],
+    "out": ["entity_ids", "entity_conf", "entity_pages", "entity_labels"]
+  },
+  "metadata": {
+    "variables": {
+      "ROOT_PATH": "~/.deeppavlov",
+      "DOWNLOADS_PATH": "{ROOT_PATH}/downloads",
+      "MODELS_PATH": "{ROOT_PATH}/models",
+      "TRANSFORMER": "DeepPavlov/distilrubert-tiny-cased-conversational-v1"
+    },
+    "download": [
+      {
+        "url": "http://files.deeppavlov.ai/kbqa/downloads/el_files_rus_v2.tar.gz",
+        "subdir": "{DOWNLOADS_PATH}/entity_linking_rus"
+      },
+      {
+        "url": "http://files.deeppavlov.ai/deeppavlov_data/entity_linking/el_ranker_rus.tar.gz",
+        "subdir": "{MODELS_PATH}/entity_linking_rus"
+      },
+      {
+        "url": "http://files.deeppavlov.ai/kbqa/wikidata/wikidata_lite.tar.gz",
+        "subdir": "{DOWNLOADS_PATH}/wikidata"
+      }
+    ]
+  }
+}

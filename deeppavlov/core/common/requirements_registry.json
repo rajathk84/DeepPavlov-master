@@ -1,0 +1,210 @@
+{
+  "answer_types_extractor": [
+    "{DEEPPAVLOV_PATH}/requirements/en_core_web_sm.txt",
+    "{DEEPPAVLOV_PATH}/requirements/ru_core_news_sm.txt"
+  ],
+  "chu_liu_edmonds_transformer": [
+    "{DEEPPAVLOV_PATH}/requirements/dependency_decoding.txt"
+  ],
+  "bpr": [
+    "{DEEPPAVLOV_PATH}/requirements/faiss.txt",
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "entity_linker": [
+    "{DEEPPAVLOV_PATH}/requirements/hdt.txt",
+    "{DEEPPAVLOV_PATH}/requirements/rapidfuzz.txt",
+    "{DEEPPAVLOV_PATH}/requirements/en_core_web_sm.txt",
+    "{DEEPPAVLOV_PATH}/requirements/ru_core_news_sm.txt"
+  ],
+  "fasttext": [
+    "{DEEPPAVLOV_PATH}/requirements/fasttext.txt"
+  ],
+  "huggingface_dataset_iterator": [
+    "{DEEPPAVLOV_PATH}/requirements/datasets.txt"
+  ],
+  "huggingface_dataset_reader": [
+    "{DEEPPAVLOV_PATH}/requirements/datasets.txt"
+  ],
+  "kenlm_elector": [
+    "{DEEPPAVLOV_PATH}/requirements/kenlm.txt"
+  ],
+  "ner_chunk_model": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "ner_chunker": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "nltk_moses_tokenizer": [
+    "{DEEPPAVLOV_PATH}/requirements/sacremoses.txt"
+  ],
+  "path_ranking_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "query_generator": [
+    "{DEEPPAVLOV_PATH}/requirements/en_core_web_sm.txt",
+    "{DEEPPAVLOV_PATH}/requirements/hdt.txt",
+    "{DEEPPAVLOV_PATH}/requirements/rapidfuzz.txt",
+    "{DEEPPAVLOV_PATH}/requirements/whapi.txt"
+  ],
+  "re_classifier": [
+    "{DEEPPAVLOV_PATH}/requirements/opt_einsum.txt",
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "re_postprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "re_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "rel_ranking_infer": [
+    "{DEEPPAVLOV_PATH}/requirements/en_core_web_sm.txt",
+    "{DEEPPAVLOV_PATH}/requirements/hdt.txt"
+  ],
+  "rel_ranking_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "ru_adj_to_noun": [
+    "{DEEPPAVLOV_PATH}/requirements/ru_core_news_sm.txt"
+  ],
+  "russian_words_vocab": [
+    "{DEEPPAVLOV_PATH}/requirements/lxml.txt"
+  ],
+  "slovnet_syntax_parser": [
+    "{DEEPPAVLOV_PATH}/requirements/slovnet.txt",
+    "{DEEPPAVLOV_PATH}/requirements/razdel.txt",
+    "{DEEPPAVLOV_PATH}/requirements/ru_core_news_sm.txt"
+  ],
+  "spacy_lemmatizer": [
+    "{DEEPPAVLOV_PATH}/requirements/en_core_web_sm.txt",
+    "{DEEPPAVLOV_PATH}/requirements/ru_core_news_sm.txt"
+  ],
+  "spelling_error_model": [
+    "{DEEPPAVLOV_PATH}/requirements/lxml.txt"
+  ],
+  "spelling_levenshtein": [
+    "{DEEPPAVLOV_PATH}/requirements/sortedcontainers.txt"
+  ],
+  "static_dictionary": [
+    "{DEEPPAVLOV_PATH}/requirements/lxml.txt"
+  ],
+  "stream_spacy_tokenizer": [
+    "{DEEPPAVLOV_PATH}/requirements/en_core_web_sm.txt",
+    "{DEEPPAVLOV_PATH}/requirements/ru_core_news_sm.txt"
+  ],
+  "torch_bert_ranker": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_bert_ranker_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_record_postprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_squad_transformers_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_text_classification_model": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt"
+  ],
+  "torch_transformers_classifier": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "multitask_transformer": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_transformers_el_ranker": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_transformers_entity_ranker_infer": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_transformers_entity_ranker_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_transformers_multiplechoice": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_transformers_multiplechoice_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_transformers_ner_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt",
+    "{DEEPPAVLOV_PATH}/requirements/sentencepiece.txt",
+    "{DEEPPAVLOV_PATH}/requirements/protobuf.txt"
+  ],
+  "torch_transformers_nll_ranker": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_transformers_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_transformers_sequence_tagger": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/torchcrf.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "torch_transformers_syntax_parser": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/torchcrf.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "multitask_pipeline_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/torchcrf.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],  
+  "torch_transformers_squad": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "transformers_bert_embedder": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "transformers_bert_preprocessor": [
+    "{DEEPPAVLOV_PATH}/requirements/pytorch.txt",
+    "{DEEPPAVLOV_PATH}/requirements/transformers.txt"
+  ],
+  "tree_to_sparql": [
+    "{DEEPPAVLOV_PATH}/requirements/udapi.txt",
+    "{DEEPPAVLOV_PATH}/requirements/razdel.txt",
+    "{DEEPPAVLOV_PATH}/requirements/ru_core_news_sm.txt"
+  ],
+  "typos_custom_reader": [
+    "{DEEPPAVLOV_PATH}/requirements/lxml.txt"
+  ],
+  "typos_kartaslov_reader": [
+    "{DEEPPAVLOV_PATH}/requirements/lxml.txt"
+  ],
+  "typos_wikipedia_reader": [
+    "{DEEPPAVLOV_PATH}/requirements/lxml.txt"
+  ],
+  "wiki_parser": [
+    "{DEEPPAVLOV_PATH}/requirements/hdt.txt"
+  ],
+  "wikitionary_100K_vocab": [
+    "{DEEPPAVLOV_PATH}/requirements/lxml.txt"
+  ]
+}
